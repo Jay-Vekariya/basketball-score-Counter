@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center;">NBA Scorecard</h1>
+    <div style="border:6px solid black; padding: 10px;">
+        <h2 id="answer"></h2>
+    </div>
+    <div class="container">
+        <div class="left" style="text-align:left;">
+            <h2>TEAM A</h2>
+              <div class="left-score" style="background-color:orange; text-align: center">
+                <p id="score1">0</p>
+              </div>
+              <div class="btn-left">
+                <button id="left" onclick="l1()">+1</button>
+                <button id="left" onclick="l2()">+2</button>
+                <button id="left" onclick="l3()">+3</button>
+              </div>
+            </div>
+
+           <!-- right score  -->
+
+           <div class="right" style="text-align:right;">
+            <h2>TEAM B</h2>
+            <div class="right-score" style="background-color:orange; text-align: center;">
+              <p id="score2">0</p>
+            </div>
+            <div class="btn-right" style="size:20px">
+               <button id="right" onclick="rone()">+1</button>
+               <button id="right" onclick="rtwo()">+2</button>
+               <button id="right" onclick="rthree()">+3</button>
+            </div>
+        </div>
+    </div>
+    <div  style="text-align: center;">
+        <button class="btn btn-info" onclick="sub()">Submit</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
